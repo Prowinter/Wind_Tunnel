@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"wind_tunnel\startup_stm32f103xb.o"
+"wind_tunnel\main.o"
+"wind_tunnel\gpio.o"
+"wind_tunnel\tim.o"
+"wind_tunnel\usart.o"
+"wind_tunnel\stm32f1xx_it.o"
+"wind_tunnel\stm32f1xx_hal_msp.o"
+"wind_tunnel\stm32f1xx_hal_gpio_ex.o"
+"wind_tunnel\stm32f1xx_hal_tim.o"
+"wind_tunnel\stm32f1xx_hal_tim_ex.o"
+"wind_tunnel\stm32f1xx_hal.o"
+"wind_tunnel\stm32f1xx_hal_rcc.o"
+"wind_tunnel\stm32f1xx_hal_rcc_ex.o"
+"wind_tunnel\stm32f1xx_hal_gpio.o"
+"wind_tunnel\stm32f1xx_hal_dma.o"
+"wind_tunnel\stm32f1xx_hal_cortex.o"
+"wind_tunnel\stm32f1xx_hal_pwr.o"
+"wind_tunnel\stm32f1xx_hal_flash.o"
+"wind_tunnel\stm32f1xx_hal_flash_ex.o"
+"wind_tunnel\stm32f1xx_hal_exti.o"
+"wind_tunnel\stm32f1xx_hal_uart.o"
+"wind_tunnel\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Wind_Tunnel\Wind_Tunnel.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Wind_Tunnel.map" -o Wind_Tunnel\Wind_Tunnel.axf
